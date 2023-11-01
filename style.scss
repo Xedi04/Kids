@@ -1,0 +1,576 @@
+@import "mixin";
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 0px 32px;
+
+}
+
+.start {
+    width: 100%;
+    background-image: url('http://www.mobilmusic.ru/mfile/99/07/4c/1410616.jpg');
+    background-size: cover;
+    background-position: center;
+    @include flex;
+    font-family: $font-f;
+
+    .basic {
+        width: 1300px;
+        @include flex-d;
+        padding: 100px 0;
+        gap: 50px;
+
+        .our {
+            width: 1000px;
+            @include flex-d;
+
+            h5 {
+                font-size: $h5;
+                color: $c-db;
+            }
+
+            h4 {
+                font-size: $h4;
+                color: $c-db;
+            }
+        }
+
+        .buy {
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+
+            .pro {
+                width: 400px;
+                height: 450px;
+                background-color: rgba(255, 255, 255, 0.4);
+                backdrop-filter: blur(10px);
+                border-radius: 30px;
+                padding: 50px;
+                color: $c-db;
+                @include flex-c;
+                gap: 30px;
+
+                h1 {
+                    font-size: 75px;
+                }
+
+                h2 {
+                    font-size: $h2;
+                }
+
+                p {
+                    font-size: $p;
+                }
+
+                .btn {
+
+                    width: 170px;
+                    height: 55px;
+                    border-radius: 30px;
+                    @include flex;
+                    cursor: pointer;
+                    font-size: 20px;
+                    color: $c-w;
+                    background: linear-gradient(90deg, rgb(93, 1, 136), rgb(249, 18, 134), orange);
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    width: 100%;
+    background-image: url('http://userscontent2.emaze.com/images/1bec81fd-81cd-4000-a8cd-65bb902a1a9e/d1e0dd2d-f8bd-47e5-9acb-d4721666dce5.jpeg');
+    background-position: center;
+    background-size: cover;
+    @include flex;
+    padding: 100px 0;
+
+    .us {
+        width: 1200px;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        border-radius: 40px;
+        @include flex-d;
+        gap: 50px;
+        padding: 100px ;
+        font-family: $font-f;
+
+        .us1 {
+            @include flex;
+            width: 600px;
+            font-size: 30px;
+            color: $c-db;
+
+        }
+
+        .send {
+            width: 1100px;
+            @include flex-d;
+            gap: 20px;
+
+            .name {
+                width: 100%;
+                @include flex;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                input {
+                    width: 500px;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    border-radius: 10px;
+                    border: none;
+                }
+
+
+            }
+
+            .mesage {
+                width: 1100px;
+                @include flex-d;
+                gap: 20px;
+
+
+                textarea {
+                    width: 1020px;
+                    border-radius: 7px;
+                    border: none;
+                    padding: 12px 20px;
+                }
+
+                input {
+                    width: 1020px;
+                    background: linear-gradient(90deg, rgb(93, 1, 136), rgb(249, 18, 134), orange);
+                    color: $c-w;
+                    font-size: 15px;
+                    padding: 20px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    border-radius: 30px;
+
+                }
+            }
+        }
+    }
+}
+
+.work {
+    width: 100%;
+    @include flex;
+    background: linear-gradient(rgb(104, 171, 233), white);
+
+    .coffe {
+        width: 1300px;
+        @include flex;
+        padding: 100px 0;
+        gap: 40px;
+        color: $c-db;
+        font-family: $font-f;
+
+        .coffe-a {
+            width: 400px;
+            height: 550px;
+            border-radius: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+
+        .coffe-b {
+            width: 860px;
+            background-color: $c-w;
+            border-radius: 40px;
+            padding: 80px 50px;
+            color: $c-db;
+            @include flex-c;
+            gap: 40px;
+            margin-bottom: -210px;
+
+            h4 {
+                font-size: $h4;
+            }
+
+            p {
+                font-size: $p;
+            }
+        }
+    }
+}
+
+.nanny {
+    width: 100%;
+    @include flex;
+
+    .hour {
+        width: 1300px;
+        height: 800px;
+        position: relative;
+        padding: 100px 0;
+        color: $c-db;
+        font-family: $font-f;
+
+        .book {
+            width: 600px;
+            height: 500px;
+            border-radius: 40px;
+            position: absolute;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 40px;
+            }
+        }
+
+        .happy {
+            width: 600px;
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            top: 250px;
+            font-family: 'Nunito', sans-serif;
+            color: $c-db;
+            @include flex-c;
+            gap: 20px;
+
+            h1 {
+                font-size: $h1;
+            }
+
+            p {
+                font-size: $p;
+            }
+
+            .but {
+                @include flex;
+                cursor: pointer;
+                width: 150px;
+                height: 50px;
+                border-radius: 30px;
+                border: 2px dashed $c-w;
+                background-color: $c-o;
+                color: $c-w;
+
+            }
+        }
+
+        .mon {
+
+            width: 270px;
+            height: 230px;
+            background-color: rgb(12, 113, 228);
+            border: 2px dashed $c-w;
+            border-radius: 20px;
+            position: absolute;
+            z-index: 3;
+            bottom: 150px;
+            left: 400px;
+            color: $c-w;
+            @include flex-d;
+            padding: 20px;
+            gap: 20px;
+
+            h4 {
+                font-size: $h4;
+            }
+
+            h5 {
+                font-size: $h5;
+            }
+        }
+    }
+}
+
+.baby {
+    width: 100%;
+    @include flex;
+
+    .kids {
+        width: 1300px;
+        height: 800px;
+        position: relative;
+
+        padding: 100px 0;
+        color: $c-db;
+        font-family: $font-f;
+
+        .who {
+            width: 400px;
+            height: 600px;
+            border-radius: 40px;
+            position: absolute;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 40px;
+            }
+        }
+
+        .we {
+            width: 600px;
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            top: 250px;
+            color: $c-db;
+            @include flex-c;
+            gap: 20px;
+
+            h1 {
+                font-size: $h1;
+            }
+
+            p {
+                font-size: $p;
+                color: gray;
+            }
+
+
+        }
+
+        .are {
+
+            width: 400px;
+            height: 600px;
+            background-color: rgb(12, 113, 228);
+            border: 2px dashed $c-w;
+            border-radius: 40px;
+            position: absolute;
+            z-index: 3;
+            bottom: 45px;
+            left: 250px;
+            color: $c-w;
+            @include flex-d;
+            padding: 50px;
+            gap: 20px;
+
+            h2 {
+                font-size: $h2 ;
+            }
+
+            input {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                border-radius: 40px;
+                border: none;
+            }
+
+            .bu {
+                background-color: $c-o;
+                cursor: pointer;
+                color: $c-w;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: rgb(12, 113, 228);
+
+                }
+            }
+
+            form {
+                width: 100%;
+
+                textarea {
+                    width: 100%;
+                    border-radius: 20px;
+                    border: none;
+                    padding: 12px 20px;
+                }
+            }
+
+
+
+        }
+    }
+}
+
+.school {
+    width: 100%;
+    @include flex;
+
+    .lesson {
+        width: 1300px;
+        @include flex;
+        padding: 200px 0;
+        justify-content: space-between;
+        font-family: $font-f;
+
+        .course {
+            width: 500px;
+            @include flex-d;
+            gap: 20px;
+            color: $c-db;
+
+
+            h1 {
+                font-size: $h1;
+            }
+
+            p {
+                font-size: $p;
+                color: gray;
+            }
+
+            .photo12 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .photo1 {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .photo {
+            width: 500px;
+            height: 500px;
+            border-radius: 40px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 40px;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .start {
+        width: 100%;
+
+        .container {
+            padding: 0 5px;
+            .basic {
+                width: 100%;
+
+                .our {
+                    width: 100%;
+                    text-align: center;
+                    gap: 10px;
+
+                    h4 {
+                        font-size: 27px;
+                    }
+
+                }
+
+                .buy {
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .pro {
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+
+
+.contact {
+    width: 100%;
+
+    .container {
+        padding: 0 5px;
+
+        .us {
+            width: 100%;
+
+            .us1 {
+                width: 100%;
+                font-size: 25px;
+            }
+
+            .send {
+                width: 100%;
+
+                .name {
+                    width: 100%;
+                    flex-direction: column;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .mesage {
+                    width: 100%;
+
+                    form {
+                        width: 100%;
+
+                        textarea {
+                            width: 100%;
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.school{
+    width: 100%;
+    .container{
+        padding: 0 5px;
+        .lesson{
+            width: 100%;
+            flex-direction: column;
+            gap: 20px;
+            .course{
+                width: 100%;
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .photo{
+                width: 100%;
+            }
+        }
+    }
+}
+}

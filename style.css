@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0px 32px;
+}
+
+.start {
+  width: 100%;
+  background-image: url("http://www.mobilmusic.ru/mfile/99/07/4c/1410616.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+}
+.start .basic {
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  gap: 50px;
+}
+.start .basic .our {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.start .basic .our h5 {
+  font-size: 20px;
+  color: rgb(3, 3, 51);
+}
+.start .basic .our h4 {
+  font-size: 35px;
+  color: rgb(3, 3, 51);
+}
+.start .basic .buy {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.start .basic .buy .pro {
+  width: 400px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 50px;
+  color: rgb(3, 3, 51);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.start .basic .buy .pro h1 {
+  font-size: 75px;
+}
+.start .basic .buy .pro h2 {
+  font-size: 32px;
+}
+.start .basic .buy .pro p {
+  font-size: 19px;
+}
+.start .basic .buy .pro .btn {
+  width: 170px;
+  height: 55px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(90deg, rgb(93, 1, 136), rgb(249, 18, 134), orange);
+  border: none;
+}
+
+.contact {
+  width: 100%;
+  background-image: url("http://userscontent2.emaze.com/images/1bec81fd-81cd-4000-a8cd-65bb902a1a9e/d1e0dd2d-f8bd-47e5-9acb-d4721666dce5.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.contact .us {
+  width: 1200px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px;
+  font-family: "Nunito", sans-serif;
+}
+.contact .us .us1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  font-size: 30px;
+  color: rgb(3, 3, 51);
+}
+.contact .us .send {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .us .send .name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.contact .us .send .name input {
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+}
+.contact .us .send .mesage {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .us .send .mesage textarea {
+  width: 1020px;
+  border-radius: 7px;
+  border: none;
+  padding: 12px 20px;
+}
+.contact .us .send .mesage input {
+  width: 1020px;
+  background: linear-gradient(90deg, rgb(93, 1, 136), rgb(249, 18, 134), orange);
+  color: white;
+  font-size: 15px;
+  padding: 20px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 30px;
+}
+
+.work {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(104, 171, 233), white);
+}
+.work .coffe {
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  gap: 40px;
+  color: rgb(3, 3, 51);
+  font-family: "Nunito", sans-serif;
+}
+.work .coffe .coffe-a {
+  width: 400px;
+  height: 550px;
+  border-radius: 20px;
+}
+.work .coffe .coffe-a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.work .coffe .coffe-b {
+  width: 860px;
+  background-color: white;
+  border-radius: 40px;
+  padding: 80px 50px;
+  color: rgb(3, 3, 51);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: -210px;
+}
+.work .coffe .coffe-b h4 {
+  font-size: 35px;
+}
+.work .coffe .coffe-b p {
+  font-size: 19px;
+}
+
+.nanny {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nanny .hour {
+  width: 1300px;
+  height: 800px;
+  position: relative;
+  padding: 100px 0;
+  color: rgb(3, 3, 51);
+  font-family: "Nunito", sans-serif;
+}
+.nanny .hour .book {
+  width: 600px;
+  height: 500px;
+  border-radius: 40px;
+  position: absolute;
+}
+.nanny .hour .book img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+.nanny .hour .happy {
+  width: 600px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 250px;
+  font-family: "Nunito", sans-serif;
+  color: rgb(3, 3, 51);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nanny .hour .happy h1 {
+  font-size: 45px;
+}
+.nanny .hour .happy p {
+  font-size: 19px;
+}
+.nanny .hour .happy .but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px dashed white;
+  background-color: orange;
+  color: white;
+}
+.nanny .hour .mon {
+  width: 270px;
+  height: 230px;
+  background-color: rgb(12, 113, 228);
+  border: 2px dashed white;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 3;
+  bottom: 150px;
+  left: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.nanny .hour .mon h4 {
+  font-size: 35px;
+}
+.nanny .hour .mon h5 {
+  font-size: 20px;
+}
+
+.baby {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.baby .kids {
+  width: 1300px;
+  height: 800px;
+  position: relative;
+  padding: 100px 0;
+  color: rgb(3, 3, 51);
+  font-family: "Nunito", sans-serif;
+}
+.baby .kids .who {
+  width: 400px;
+  height: 600px;
+  border-radius: 40px;
+  position: absolute;
+}
+.baby .kids .who img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+.baby .kids .we {
+  width: 600px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 250px;
+  color: rgb(3, 3, 51);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.baby .kids .we h1 {
+  font-size: 45px;
+}
+.baby .kids .we p {
+  font-size: 19px;
+  color: gray;
+}
+.baby .kids .are {
+  width: 400px;
+  height: 600px;
+  background-color: rgb(12, 113, 228);
+  border: 2px dashed white;
+  border-radius: 40px;
+  position: absolute;
+  z-index: 3;
+  bottom: 45px;
+  left: 250px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+}
+.baby .kids .are h2 {
+  font-size: 32px;
+}
+.baby .kids .are input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 40px;
+  border: none;
+}
+.baby .kids .are .bu {
+  background-color: orange;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+.baby .kids .are .bu:hover {
+  background-color: rgb(12, 113, 228);
+}
+.baby .kids .are form {
+  width: 100%;
+}
+.baby .kids .are form textarea {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 12px 20px;
+}
+
+.school {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.school .lesson {
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+}
+.school .lesson .course {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(3, 3, 51);
+}
+.school .lesson .course h1 {
+  font-size: 45px;
+}
+.school .lesson .course p {
+  font-size: 19px;
+  color: gray;
+}
+.school .lesson .course .photo12 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.school .lesson .course .photo12 .photo1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.school .lesson .course .photo12 .photo1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.school .lesson .photo {
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+}
+.school .lesson .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .start {
+    width: 100%;
+  }
+  .start .container {
+    padding: 0 5px;
+  }
+  .start .container .basic {
+    width: 100%;
+  }
+  .start .container .basic .our {
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+  }
+  .start .container .basic .our h4 {
+    font-size: 27px;
+  }
+  .start .container .basic .buy {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .start .container .basic .buy .pro {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact .container {
+    padding: 0 5px;
+  }
+  .contact .container .us {
+    width: 100%;
+  }
+  .contact .container .us .us1 {
+    width: 100%;
+    font-size: 25px;
+  }
+  .contact .container .us .send {
+    width: 100%;
+  }
+  .contact .container .us .send .name {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contact .container .us .send .name input {
+    width: 100%;
+  }
+  .contact .container .us .send .mesage {
+    width: 100%;
+  }
+  .contact .container .us .send .mesage form {
+    width: 100%;
+  }
+  .contact .container .us .send .mesage form textarea {
+    width: 100%;
+  }
+  .contact .container .us .send .mesage input {
+    width: 100%;
+  }
+  .school {
+    width: 100%;
+  }
+  .school .container {
+    padding: 0 5px;
+  }
+  .school .container .lesson {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .school .container .lesson .course {
+    width: 100%;
+  }
+  .school .container .lesson .course h1 {
+    font-size: 40px;
+  }
+  .school .container .lesson .photo {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

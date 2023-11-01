@@ -1,0 +1,25 @@
+
+
+@mixin flex-d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@mixin div($w, $h){
+width: $w;
+height: $h;
+}
